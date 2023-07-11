@@ -1,0 +1,505 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+}
+
+/* variables */
+
+:root {
+  --primary-100: #8b5fbf;
+  --primary-200: #61398f;
+  --primary-300: #ffffff;
+  --accent-100: #d6c6e1;
+  --accent-200: #9a73b5;
+  --text-100: #4a4a4a;
+  --text-200: #878787;
+  --bg-100: #f5f3f7;
+  --bg-200: #e9e4ed;
+  --bg-300: #ffffff;
+  --font: "Poppins", sans-serif;
+}
+/* estilos generales */
+h1,
+h2 {
+  font-size: 25px;
+  font-weight: bold;
+}
+h3 {
+  font-size: 20;
+  font-weight: bold;
+  color: var();
+  margin-bottom: 10px;
+}
+p {
+  margin-right: 15px;
+  margin-left: 16px;
+  margin-bottom: 15px;
+  text-align: justify;
+}
+a {
+  color: var(--accent-200);
+  text-decoration: none;
+  font-weight: bold;
+}
+/* estilo nav */
+
+.sidenav {
+  height: 100%;
+  width: 220px;
+  position: fixed;
+  z-index: 0;
+  top: 0;
+  left: 0;
+  background-color: var(--accent-100);
+  overflow-x: hidden;
+}
+.sidenav header {
+  padding: 8px 16px;
+  background-color: var(--primary-100);
+  color: var(--bg-300);
+}
+
+/* Side navigation links */
+.sidenav a {
+  text-transform: lowercase;
+  text-transform: capitalize;
+  color: var(--text-100);
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+  font-family: var(--font);
+  border-bottom: 2px solid var(--text-200);
+}
+
+/* Change color on hover */
+.sidenav a:hover {
+  background-color: var(--accent-200);
+  color: var(--bg-300);
+  font-weight: bold;
+}
+/* Style main */
+#main-doc {
+  margin-left: 230px;
+  height: auto;
+}
+
+/* estilos seciones */
+.main-section {
+  margin-top: 20px;
+}
+.main-section header {
+  font-size: 18px;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: var(--primary-100);
+  padding: 10px 20px;
+  font-weight: bold;
+}
+/* estilo de los articulos  */
+.main-article {
+  max-width: 900px;
+  margin-left: 40px;
+}
+.main-article h3 {
+  text-transform: uppercase;
+  font-family: var(--font);
+  font-size: 20px;
+  color: var(--primary-100);
+}
+.main-article ol,
+.main-article ul {
+  margin-left: 32px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.main-article figure {
+  max-width: 800px;
+  min-width: 340px;
+  margin-left: 15px;
+  position: relative;
+}
+
+figure img {
+  width: 100%;
+}
+figure figcaption {
+  position: absolute;
+  bottom: 10px;
+  left: 23px;
+  color: var(--text-200);
+  font-size: 12px;
+}
+pre {
+  width: 80%;
+  height: auto;
+}
+code {
+  display: block;
+  background-color: #f0f0f0;
+  color: #333;
+  padding: 10px;
+  width: 100%;
+}
+code span {
+  color: var(--accent-200);
+}
+
+/* contenedor colores */
+.contenedor {
+  margin-bottom: 10px;
+  display: flex;
+  padding: 5px;
+  flex-direction: column;
+  gap: 5px;
+  width: 100%;
+  height: 250px;
+  border: 2px solid var(--primary-100);
+}
+.contenedor-uno,
+.contenedor-dos {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+  width: 100%;
+  height: 125px;
+}
+
+.contenedor-uno div,
+.contenedor-dos div {
+  width: 25%;
+  height: 110px;
+  border: 2px solid black;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.yellow {
+  background-color: #ffff00;
+}
+.green {
+  background-color: #008000;
+}
+.red {
+  background-color: #ff0000;
+}
+.blue {
+  background-color: blue;
+}
+.pink {
+  background-color: #ffc0cb;
+}
+.orange {
+  background-color: #ffa500;
+}
+.purpe {
+  background-color: #800080;
+}
+.while {
+  background-color: white;
+}
+.black {
+  background-color: #000000;
+}
+.black--color-white {
+  color: white;
+}
+/* secction border */
+.border-todos,
+.border-bootom,
+.borde-radius,
+.border-lef {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  max-width: 400px;
+  height: 50px;
+}
+.border-todos {
+  border: 2px solid var(--primary-200);
+}
+.border-bootom {
+  border-bottom: 2px solid red;
+}
+.borde-radius {
+  border: 2px solid var(--primary-200);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.border-lef {
+  border-left: 2px solid var(--text-100);
+}
+.container-border {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  gap: 5px;
+}
+.container-border p,
+.one,
+.two,
+.three,
+.four {
+  width: 50%;
+  border-color: var(--primary-100);
+  padding: 0.3125rem;
+}
+.dotted {
+  border-style: dotted;
+}
+.dashed {
+  border-style: dashed;
+}
+.solid {
+  border-style: solid;
+}
+.double {
+  border-style: double;
+}
+.groove {
+  border-style: groove;
+}
+.ridge {
+  border-style: ridge;
+}
+.inset {
+  border-style: inset;
+}
+.outset {
+  border-style: outset;
+}
+.no-border {
+  border: none;
+}
+
+.mixed {
+  border-style: dotted dashed solid double;
+}
+/* borde width */
+
+p.one {
+  border-style: solid;
+  border-width: 5px;
+}
+
+p.two {
+  border-style: solid;
+  border-width: medium;
+}
+
+p.three {
+  border-style: dotted;
+  border-width: 2px;
+}
+
+p.four {
+  border-style: dotted;
+  border-width: thick;
+}
+.one-color,
+.two-color,
+.three-color,
+.border-sides,
+.borde-shorthand,
+.some-text,
+.border-radius {
+  width: 50%;
+  border-color: var(--primary-100);
+  padding: 0.3125rem;
+}
+p.one-color {
+  border-style: solid;
+  border-color: red;
+}
+
+p.two-color {
+  border-style: solid;
+  border-color: green;
+}
+
+p.three-color {
+  border-style: dotted;
+  border-color: blue;
+}
+.border-sides {
+  border-color: var(--primary-100);
+  border-top-style: dotted;
+  border-right-style: solid;
+  border-bottom-style: dotted;
+  border-left-style: solid;
+}
+.borde-shorthand {
+  border: 5px solid red;
+}
+.some-text {
+  border-left: 6px solid red;
+}
+
+/* Selector de contenido para elementos con nivel de redondez 1 */
+p[data-level="1"] {
+  border-radius: 5px;
+  border: 2px solid var(--primary-100);
+}
+
+/* Selector de contenido para elementos con nivel de redondez 2 */
+p[data-level="2"] {
+  border-radius: 10px;
+  border: 2px solid var(--primary-100);
+}
+
+/* Selector de contenido para elementos con nivel de redondez 3 */
+p[data-level="3"] {
+  border-radius: 15px;
+  border: 2px solid var(--primary-100);
+}
+
+/* Selector de contenido para elementos con nivel de redondez 4 */
+p[data-level="4"] {
+  border-radius: 20px;
+  border: 2px solid var(--primary-100);
+}
+
+/* table,
+tr {
+  border: 2px solid var(--accent-200);
+} */
+table {
+  width: 80%;
+  margin-bottom: 15px;
+
+  border-collapse: collapse;
+}
+.column1 {
+  width: 20%;
+}
+.column2 {
+  width: 80%;
+}
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+  background-color: var(--accent-100);
+  color: var(--primary-200);
+}
+
+th {
+  background-color: var(--primary-100);
+  color: var(--bg-300);
+}
+table td:nth-child(2n) {
+  background-color: var(--primary-300);
+  color: var(--text-100);
+  text-align: left;
+  border-right: var(--text-200);
+}
+/* width/height */
+.emjemplo1,
+.ejemplo2,
+.ejemplo3 {
+  background-color: var(--accent-100);
+  color: var(--primary-200);
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-weight: bold;
+  width: 50%;
+  height: 200px;
+  text-align: center;
+}
+.ejemplo2 {
+  width: 500px;
+  height: 100px;
+}
+.ejemplo3 {
+  max-width: 500px;
+  height: 100px;
+  margin-bottom: 15px;
+}
+
+/* modelo de caja */
+
+.margin {
+  position: relative;
+  padding: 25px;
+  width: 70%;
+  height: 250px;
+  background-color: var(--accent-200);
+  text-align: center;
+  margin-bottom: 15px;
+}
+.margin::before {
+  content: "Margin";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1.8362rem);
+  color: var(--primary-300);
+  font-weight: bold;
+}
+.border {
+  position: relative;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-200);
+}
+.border::before {
+  content: "Boder";
+  position: absolute;
+  top: 0;
+  color: var(--primary-300);
+  font-weight: bold;
+  left: calc(50% - 1.5094rem);
+}
+.padding {
+  position: relative;
+  padding: 25px;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-100);
+}
+.padding::before {
+  content: "Padding";
+  position: absolute;
+  color: var(--primary-300);
+  font-weight: bold;
+  top: 0;
+  left: calc(50% - 2.1481rem);
+}
+.contenido {
+  padding: 2.3438rem 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--primary-300);
+}
+.contenido h4 {
+  color: var(--primary-200);
+}
+@media (prefers-reduced-motion: no-preference) {
+  * {
+    scroll-behavior: smooth;
+  }
+}
+
+@media (max-width: 768px) {
+  .sidenav {
+    display: none;
+  }
+  #main-doc {
+    margin-left: 15px;
+  }
+}
+@media (max-width: 730px) {
+  .emjemplo1,
+  .ejemplo2,
+  .ejemplo3 {
+    font-size: 1.125rem;
+  }
+}
